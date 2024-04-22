@@ -94,7 +94,6 @@ module Zoom
         raise Zoom::NotImplemented, 'user_upload_picture is not yet implemented'
       end
 
-
       def user_settings_get(*args)
         params = Zoom::Params.new(Utils.extract_options!(args))
         params.require(:id).permit(:login_type)
